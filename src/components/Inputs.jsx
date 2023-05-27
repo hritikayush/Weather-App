@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { UilSearch } from "@iconscout/react-unicons";
 import { UilLocationPoint } from '@iconscout/react-unicons'
 function Inputs({setQuery, units, setUnits}) {
-    const {city, setCity} = useState("");
+    const [city, setCity] = useState("");
     const handleSearchClick = () =>{
         if(city !='')
             setQuery({q: city});
